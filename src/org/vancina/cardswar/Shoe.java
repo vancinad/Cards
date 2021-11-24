@@ -3,11 +3,11 @@ package org.vancina.cardswar;
 import java.util.ArrayList;
 import java.util.Comparator;
 
-public class Deck {
-    private ArrayList<Card> cards = null;
+public class Shoe {
+    private ArrayList<Card> cards;
 
-    public Deck(int numPacks) {
-        cards = new ArrayList<Card>();
+    public Shoe(int numPacks) {
+        cards = new ArrayList<>();
         for (int d = 0; d<numPacks; d++)
             for (int s = 0; s<Card.Suits.length; s++)
                 for (int r = 0; r<Card.Ranks.length; r++)
