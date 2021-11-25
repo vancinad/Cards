@@ -1,6 +1,7 @@
 package org.vancina.cardswar;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 
 public class Shoe {
@@ -35,12 +36,6 @@ public class Shoe {
     }
 
     public void shuffle() {
-        /*  Run through the shoe from beginning to end. At each position, choose a random position in the deck then swap the two cards. */
-        for (int c = 0; c<cards.size(); c++) {
-            Card t = cards.get(c);
-            int r = (int) (Math.random() * cards.size());
-            cards.set(c, cards.get(r));
-            cards.set(r, t);
-        }
+        Collections.shuffle(cards);
     }
 }
